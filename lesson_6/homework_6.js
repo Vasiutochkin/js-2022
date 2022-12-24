@@ -158,8 +158,8 @@ let deckOfCards = [
     {cardSuit: 'clubs', value: 'ace', color: 'black'},
 ];
 
-// let filter_1 = deckOfCards.filter(value => value.cardSuit === 'spade' && value.value === 'ace');
-// console.log(filter_1);
+let filter_1 = deckOfCards.filter(value => value.cardSuit === 'spade' && value.value === 'ace');
+console.log(filter_1);
 //
 // // - всі шістки
 // let filter_2 = deckOfCards.filter(value => value.value === 6);
