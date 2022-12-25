@@ -39,14 +39,15 @@ fetch(apiURL + id + '/comments')
             if (typeof value [item] !== 'object') {
                 postDiv.innerText = `${item} - ${value [item]}`
             } else {
-                for (const Key in value [item]) {
+                for (const key in value [item]) {
                     const keyDiv = document.createElement('div');
 
-                    if (typeof value [item] [Key] !== 'object') {
-                        keyDiv.innerText = `${Key} : ${value [item] [Key]}`;
+                    if (typeof value [item][key] !== 'object') {
+                        keyDiv.innerText = `${key} : ${value [item][key]}`;
                     }
                     postDiv.append(keyDiv)
                 }
             }
         }
-    });
+    })
+

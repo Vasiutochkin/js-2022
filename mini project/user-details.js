@@ -101,6 +101,7 @@ btn.onclick = function () {
                 container_3.append(divPost);
             }
         })
+    btn.disabled = true;
 }
 
 
